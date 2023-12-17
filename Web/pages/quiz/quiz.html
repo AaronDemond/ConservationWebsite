@@ -1,0 +1,178 @@
+<!--
+  Purpose: Ecosystem page of the website, contains information regarding the flora and fauna found at the conservation
+  Authors: 
+  Devon Leigh - Styling, structure, content
+  Rahabar Mahmud - Content, Footer
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+
+    <!--Linking the css files for styling-->
+    <link rel="stylesheet" href="../../styles/body.css" />
+    <link rel="stylesheet" href="../../styles/nav.css" />
+    <link rel="stylesheet" href="../../styles/header.css" />
+    <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/estore.css" />
+
+    <!--Linking a custom font-->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--Linking the javascript files for functionality-->
+    <script defer src="../../scripts/estore.js"></script>
+    <script>
+      function seniorFunction(){
+
+var x = document.getElementById("senior").innerHTML;
+
+
+if (x== "Accessibility Mode"){
+console.log(document.getElementsByClassName('main-container').length);
+document.getElementById("senior").innerHTML = "Normal View";
+document.getElementsByClassName('main-container')[0].style.backgroundColor='dimgrey';
+let len = document.getElementsByClassName('main-container').length;
+for(i=0; i<len; i++){
+document.getElementsByClassName('main-container')[i].style.color='rgb(225,225,80)';
+document.getElementsByClassName('main-container')[i].style.fontSize = '30px';
+}
+}
+else {
+window.location.reload();
+}
+}   
+    </script>
+    <script defer src="../../scripts/main.js"></script>
+
+    <title>Ecology Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link your CSS file -->
+    <script src="quiz.js"></script>
+    <!-- Link your JavaScript file -->
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="org-name">
+          <!--Links back to homepage if clicked-->
+          <a class="org-logo" href="../../index.html"></a>
+          <!--Links back to homepage if clicked-->
+          <p>
+            <a href="../../index.html">Woodland <b>Conservation</b> Project</a>
+          </p>
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn_burger"></div>
+          <div id="nav-bar" class="nav-bar">
+            <nav>
+              <ul>
+                <li><a href="../../pages/about/about.html">About</a></li>
+                <li><a href="../../pages/ecosystem/ecosystem.html">Ecosystem</a></li>
+                <li><a href="../../pages/burial/burial.html">Burial</a></li>
+                <li><a href="../../pages/quiz/quiz.html">Quiz</a></li>
+                <li><a href="../../pages/e-commerce/estore.html">Marketplace</a></li>
+                <li><a href="../../pages/newmap/client/index.html">Map</a></li>
+                <li><a href="../../pages/newmap/client/conservation.html">Gallery</a></li>
+                <li><a href="../../pages/newmap/admin/index.html">Photo Upload</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Main content div for all page content for responsive design-->
+    <div id="main-content" class="main-content main-container" style="height: 900px" >
+    <!-- Start Section -->
+    <div id="startSection">
+      <!-- Welcome message and age group selection -->
+      <h1 style="padding-top:100px" >Welcome to the Woodland Conservation Quiz!</h1>
+      <h3>Please select your age group:</h3>
+      <button id="adultBtn">Adult (15 above)</button>
+      <button id="kidBtn">Kid (under 15)</button>
+    </div>
+
+    <!-- Adult Section for difficulty selection -->
+    <div id="adultSection" class="hidden">
+      <h2>Choose the difficulty of the quiz:</h2>
+      <button id="easyBtn">Easy</button>
+      <button id="hardBtn">Hard</button>
+    </div>
+
+    <!-- Kid Section - Will display dynamically loaded questions -->
+    <div id="kidSection" class="hidden">
+      <!-- Kid's questions can be dynamically loaded here -->
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizSection" class="hidden">
+      <!-- Display the question and options -->
+      <h2>Quiz Section</h2>
+      <div id="question"></div>
+      <div id="options"></div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="hidden">
+      <!-- Display the quiz result -->
+      <h2>Quiz Result</h2>
+      <div id="result"></div>
+      <button id="playAgainBtn">Play Again</button>
+    </div>
+
+      <!--The footer-->
+      <div class="empty" style="height:400px"></div>
+      <footer class="section-p1">
+        <div class="col">
+          <h4>Contact Us</h4>
+          <p><strong>Phone:</strong> 111 222 333/ (+1) 444 555 666</p>
+          <p><strong>Hours:</strong> 10:00 - 16:00; Mon - Sat</p>
+        </div>
+
+        <div class="col">
+          <h4>Useful Links</h4>
+          <a href="#">Quiz</a>
+          <a href="#">Sign-in</a>
+          <a href="#">MarketPlace</a>
+          <a href="#">Map</a>
+        </div>
+
+        <div class="col">
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Ⓒ SMU Software Engineering Group I</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/* 
+ The purpose of this file is to define the styling for the index page within the admin folder
+
+ Author: Agowun Muhammad Altaf (A00448118) & Charles Demond (A00358156)
+
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#optionSect {
+  padding: 1em 10vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#optionSect .options {
+  background-color: #01a66f;
+  color: black;
+  padding: 0.5em;
+  margin: 0.3em;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,132 @@
+/*  Purpose: The CSS file contains styles defining the visual presentation, layout,
+              and design elements for the Woodland Conservation Quiz web interface, ensuring a 
+              visually appealing and cohesive user experience.
+    Author: Lipi Sharma and Charles Demond */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  color: black; 
+  line-height: 1.6;
+  font-style: italic, bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Background styling */
+body {
+  background-image: url("images/background.jpg"); /* Path of the background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-bar {
+    background-color: white;
+    z-index: 1;
+}
+
+/* Putting navbar burger on top the bar */
+.menu-btn_burger {
+  z-index: 9999;
+}
+.open .close {
+  z-index: 9999;
+}
+
+/* Hide quiz sections by default */
+#adultSection,
+#kidSection,
+#quizSection,
+#resultSection {
+  display: none;
+}
+
+/* Quiz container styles */
+.quiz-container {
+  max-width: 900px; /* Set maximum width */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Center align text */
+}
+.container {
+  text-align: center;
+}
+
+/* Try using a more specific selector */
+.img.option-image {
+  display: block;
+  margin: 20px auto;
+  width: 200px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border: 20px solid #ffffff; /* Example border style */
+  /* Add any other styles you want to apply */
+}
+
+/* Centering the buttons and making them responsive */
+button {
+  display: block;
+  margin: 10px auto; /* Add spacing between buttons */
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: lightslategray; /* Yellow background */
+  color: black; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px; /* Set maximum width */
+  box-sizing: border-box;
+}
+
+/* Styling specific buttons */
+#easyBtn,
+#hardBtn {
+  background-color: lightslategray; /* Green background */
+}
+
+/* Responsive styles for headings */
+h1,
+h2,
+h3 {
+  color: black; /* black heading */
+  margin-bottom: 20px;
+  font-style: italic, bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* Responsive styles for paragraphs */
+p {
+  color: black; /* black paragraph */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic, bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 805px) {
+  .quiz-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+  h2, h1 {
+      font-size: 1.8em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
